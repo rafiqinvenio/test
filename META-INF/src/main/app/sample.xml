@@ -9,6 +9,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
     <flow name="testFlow1" doc:name="testFlow1">
         <http:inbound-endpoint exchange-pattern="request-response" host="localhost" port="8081" path="test" doc:name="HTTP"/>
         <set-payload value="HELLO" doc:name="Set Payload"/>
-        <logger message="#[payload] ::: #[message]" level="INFO" doc:name="Logger"/>
+        <logger message=":::::::::::#[payload] ::: #[message] ::::::::::" level="INFO" doc:name="Logger"/>
     </flow>
 </mule>
